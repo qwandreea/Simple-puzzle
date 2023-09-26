@@ -1,0 +1,268 @@
+h1 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	position: relative;
+	text-align: center;
+	font-size: 3em;
+	letter-spacing: 4px;
+	overflow: hidden;
+	font-weight: 700;
+	background: linear-gradient(310deg, rgba(2, 0, 36, 1) 0%, rgba(104, 103, 126, 1) 25%, rgba(153, 152, 169, 1) 37%, rgba(173, 172, 187, 1) 42%, rgba(201, 201, 212, 1) 49%, rgba(234, 234, 241, 1) 57%, rgba(246, 246, 252, 1) 60%, rgba(0, 212, 255, 1) 100%);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: movingText 8s linear infinite;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes movingText {
+	0% {
+		background-position: -800%;
+	}
+
+	100% {
+		background-position: 800%;
+	}
+}
+
+body {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqGP4pUGwJX9ZsR7oecHdSRwVCv_uqVGkpLraFiCoXZ94nlo_t47VETiOILbSohAaXh2Y&usqp=CAU');
+	margin: 0;
+}
+
+.utils {
+	overflow: hidden;
+	position: absolute;
+	background-color: #d9d9d9;
+	background-clip: border-box;
+	background-attachment: none;
+	opacity: 0.75;
+	top: 0%;
+	right: 0%;
+	height: 100%;
+	width: 85px;
+}
+
+.instruction,
+.zIn,
+.zOut,
+.fullView {
+	z-index: 100;
+	position: absolute;
+	cursor: cell;
+	opacity: 0.5;
+}
+
+.instruction:hover,
+.zIn:hover,
+.zOut:hover,
+.fullView:hover {
+	opacity: 1.0;
+}
+
+.instruction {
+	right: 0%;
+	top: 10%;
+	margin-top: -200px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.zIn {
+	right: 0%;
+	top: 45%;
+	margin-top: -80px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.zOut {
+	right: 0%;
+	top: 45%;
+	margin-top: 40px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.fullView {
+	right: 0%;
+	top: 45%;
+	margin-top: 160px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.div {
+	position: relative;
+}
+
+.canvas {
+	overflow: hidden;
+	position: absolute;
+}
+
+.puzzle {
+	overflow: hidden;
+	opacity: 0.9;
+	position: absolute;
+	left: 25%;
+	top: 15%;
+	right: 25;
+	z-index: 1;
+}
+
+.info {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: solid black;
+	font-weight: 700;
+	text-decoration: solid black;
+	font-style: italic;
+	font-variant: normal;
+	text-transform: none;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+}
+
+.pieces {
+	border: 2px solid #a46;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 400px;
+	padding: 0;
+	width: 400px;
+
+}
+
+.pieces li {
+	background-size: 400% 400%;
+	border: none;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+#id {
+	display: inline-block;
+	width: 95%;
+	vertical-align: top;
+}
+
+#nivel {
+	display: inline;
+	margin-left: 20%;
+
+}
+
+article {
+	width: 480px;
+	height: 480px;
+	margin: 70px auto 70px auto;
+	position: relative;
+	margin-left: 100%;
+	-webkit-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+
+.pieseanimatie {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	z-index: 100;
+	margin:auto;
+	-webkit-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	transition: all 0.8s;
+	perspective: 1000;
+}
+
+#piesa1 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: left top;
+}
+
+#piesa2 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: center top;
+}
+
+#piesa3 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: right top;
+}
+
+#piesa4 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: left center;
+}
+
+#piesa5 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: center center;
+}
+
+#piesa6 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: right center;
+}
+
+#piesa7 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: left bottom;
+}
+
+#piesa8 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: center bottom;
+}
+
+#piesa9 {
+	width: 160px;
+	height: 160px;
+	background: url('./media/cat.png');
+	background-position: right bottom;
+}
+
+.changeImage {
+	z-index: 100;
+	transform: scale(1.2);
+}
+
+.lvl {
+	display: inline;
+	position: relative;
+	cursor: pointer;
+	font-size: 20px;
+}

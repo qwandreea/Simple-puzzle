@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Fun Puzzle</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="./script.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<h1>WELCOME! HOPE YOU WILL HAVE FUN</h1>
+	<div class="utils">
+		<img width="55" height="55" class="instruction" id="instruction" src="./media/info.png" title="Instructiuni" />
+		<img width="55" height="55" class="zIn" id="zIn" src="./media/zoom-in.png" title="Zoom In" onclick="zoomIn()" />
+		<img width="55" height="55" class="zOut" id="zOut" src="./media/zoom-out.png" title="Zoom Out"
+			onclick="zoomOut()" />
+		<img width="55" height="55" class="fullView" id="fullView" src="./media/imageView.png"
+			title="Imagine completa" />
+	</div>
+
+	<p id="nivel">
+		<input type="radio" name="lvl" checked="checked" value="2" id="usor" class="cinput"
+			onclick="myFunc(this.value,img);" />
+		<label for="usor" id="usor" class="lvl" onmousedown="soundchose.play()">Easy level
+
+		</label>
+		<input type="radio" name="lvl" id="mediu" class="cinput" value="4" onclick="myFunc(this.value,img);" />
+		<label for="mediu" class="lvl" onmousedown="soundchose.play()">Medium level</label>
+		<input type="radio" name="lvl" id="greu" value="6" class="cinput" onclick="myFunc(this.value,img);" />
+		<label for="greu" class="lvl" onmousedown="soundchose.play()">Hard level</label>
+	</p>
+
+	<div class="area">
+		<canvas id="canvas" class="canvas"></canvas>
+		<img id="puzzle" class="puzzle" width="600" height="400" style="display:none" src="./media/puzzle.png" />
+		<div id="dialogInstruction" width="100" height="100">
+			<p id="info" class="info" style="display: none">
+				Click pe galerie pentru a vizualiza imaginea completa. <br>
+				Click pe zoom-in pentru a mari imaginea.<br>
+				Click pe zoom-out pentru a miscora imaginea.<br>
+				Selectati nivelul dorit.<br>
+				Mutati piesele cu drag and drop pentru a forma imaginea din galerie.
+			</p>
+		</div>
+	</div>
+
+	<div id="slice">
+		<ul id="pieces" class="pieces" ondrop="soundrop.play()" ondrag="soundrag.play()"></ul>
+		<article>
+			<div class="pieseanimatie" id="piesa1"></div>
+			<div class="pieseanimatie" id="piesa2"></div>
+			<div class="pieseanimatie" id="piesa3"></div>
+			<div class="pieseanimatie" id="piesa4"></div>
+			<div class="pieseanimatie" id="piesa5"></div>
+			<div class="pieseanimatie" id="piesa6"></div>
+			<div class="pieseanimatie" id="piesa7"></div>
+			<div class="pieseanimatie" id="piesa8"></div>
+			<div class="pieseanimatie" id="piesa9"></div>
+		</article>>
+	</div>
+</body>
+
+</html>
