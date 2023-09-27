@@ -5,7 +5,7 @@ This fun project propose a puzzle with the _drag-and-drop_ technique and one _an
 ## Installation:
 
 Open the ./index.html
-<!-- 
+
 ## Usage:
 
 [Drag and drop puzzle.]
@@ -14,7 +14,7 @@ The instructions appear on the right side of the screen. When the puzzle is solv
 
 [Animated puzzle]
 Click on the pieces that you want to swap.
-![](./media/screenshots/Screenshot%202023-09-27%20225118.png) -->
+![](./media/screenshots/Screenshot%202023-09-27%20225118.png)
 
 
 
