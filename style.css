@@ -9,9 +9,9 @@ h1 {
 	background: linear-gradient(310deg, rgba(2, 0, 36, 1) 0%, rgba(104, 103, 126, 1) 25%, rgba(153, 152, 169, 1) 37%, rgba(173, 172, 187, 1) 42%, rgba(201, 201, 212, 1) 49%, rgba(234, 234, 241, 1) 57%, rgba(246, 246, 252, 1) 60%, rgba(0, 212, 255, 1) 100%);
 	background-repeat: no-repeat;
 	background-size: 80%;
-	/* animation: movingText 12s linear infinite; */
+	animation: movingText 12s linear infinite;
 	-webkit-background-clip: text;
-	/* background-clip: text; */
+	background-clip: text;
 	-webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
