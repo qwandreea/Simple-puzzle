@@ -16,6 +16,7 @@ The instructions appear on the right side of the screen. When the puzzle is solv
 Click on the pieces that you want to swap.
 ![](./media/screenshots/Screenshot%202023-09-27%20225118.png)
 
+© [This project is my personal work.]
 
 
 
